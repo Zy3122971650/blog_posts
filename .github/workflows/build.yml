@@ -1,0 +1,21 @@
+name: build-blog-data
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-web-server-data
+  name: build server data
+  runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v2
+      - name: requirement
+        run: |
+         python -m pip install --upgrade pip
+         pip install PyYAML
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build
+        run: |
+        ls      
