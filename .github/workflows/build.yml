@@ -5,11 +5,13 @@ on:
     - master
 
 jobs:
-  build-web-server-data
-  name: build server data
-  runs-on: ubuntu-latest
+  build-web-server-data:
+    name: build server data
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: requirement
         run: |
          python -m pip install --upgrade pip
@@ -18,4 +20,12 @@ jobs:
         uses: actions/checkout@v2
       - name: build
         run: |
-        ls      
+          python build.py
+          cd dist
+          git init
+          git config user.name "Zhang Yang"
+          git config user.email 3122971650@qq.com
+          git add .
+          git commit -m "auto build"
+          git push -f -u master:page_server
+          
