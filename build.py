@@ -201,9 +201,25 @@ def parase_friend_links(links_path_list: list):
     os.chdir(BASE_PATH)
 
 
-def move_normal_posts():
-    # 它会创建文件夹 当然也可以指定dirs_exise_ok=True
-    shutil.copytree('normal', './dist/post')
+def generate_normal_posts_for_dist(markdown_path_list):
+    os.mkdir('./dist/posts')
+    os.chdir('dist/posts')
+
+    for path in markdown_path_list:
+        basename = os.path.basename(path)
+        with open(path, 'r') as f:
+            # 读取全文，利用正则表达式获取yaml部分
+            content = f.read()
+            content = content.strip('')
+            match = re.search(RE_RULER, content)
+            result = match.group(0)
+
+            # 通过yaml部分计算正文位置，读取正文
+            main_text_start = len(result.encode('utf-8'))
+            f.seek(main_text_start)
+            main_text = f.read()
+            with open(basename, 'w') as f1:
+                f1.write(main_text)
     os.chdir(BASE_PATH)
 
 
@@ -234,13 +250,14 @@ def main():
         post_datas, item_for_each_page=6)
     parse_markdown_for_tags_page(post_datas, item_for_each_page=6)
 
+    # 生成没有yaml的文章（可以优化，我们一边解析一边生成文章 - - 就是代码可能会变得混乱）
+    generate_normal_posts_for_dist(markdown_path)
     # 解析links
     links_path = get_all_friend_links()
     parase_friend_links(links_path)
 
     # 移动文章
     move_links_posts()
-    move_normal_posts()
 
 
 main()
