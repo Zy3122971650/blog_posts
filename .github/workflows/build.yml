@@ -28,6 +28,5 @@ jobs:
           git add .
           git commit -m "auto build"
           git remote add orgin https://github.com/Zy3122971650/blog_posts.git
-          git branch -u -f page_server
-          git push -f master page_server
+          git push -f origin master:page_server
           
