@@ -22,11 +22,12 @@ jobs:
         run: |
           python build.py
           cd dist
-          git init
           git config user.name "Zhang Yang"
           git config user.email 3122971650@qq.com
+          git init
           git add .
           git commit -m "auto build"
           git remote add origin https://github.com/Zy3122971650/blog_posts.git
+          git config --global credential.helper ${{secrets.LOGIN_TOKEN}}
           git push -f origin master:page_server
           
