@@ -232,8 +232,7 @@ def move_links_posts():
             posts_path.append(os.path.abspath(name))
     os.chdir(BASE_PATH)
 
-    os.mkdir('./dist/links/post')
-    os.chdir('./dist/links/post')
+    os.chdir('./dist/posts')
     for path in posts_path:
         shutil.copy(path, '.')
     os.chdir(BASE_PATH)
