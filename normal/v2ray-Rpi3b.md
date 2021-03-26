@@ -24,7 +24,7 @@ top:
 - 一颗愿意动手的心
 - Google/Baidu
 
-<!--more-->
+
 # 我的环境
 
 - 电脑用的 Linux
