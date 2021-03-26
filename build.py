@@ -133,6 +133,16 @@ def parse_markdown_for_tags_page(post_datas, item_for_each_page):
                 tags_dic[tag] = []
                 tags_dic[tag].append(post)
 
+    with open('tags_list.json', 'w') as f:
+        tags_list = []
+        for tag in tags_dic.keys():
+            tags_list.append(
+                {
+                    'name': tag,
+                    'number': len(tags_dic[tag])
+                })
+        json.dump(tags_list, f)
+
     for tag in tags_dic.keys():
         os.mkdir(tag)
         os.chdir(tag)
