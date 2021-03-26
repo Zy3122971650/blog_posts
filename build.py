@@ -228,7 +228,7 @@ def move_links_posts():
     files = os.listdir()
     posts_path = []
     for name in files:
-        if name.split('.')[-1] == '.md':
+        if name.split('.')[-1] == 'md':
             posts_path.append(os.path.abspath(name))
     os.chdir(BASE_PATH)
 
