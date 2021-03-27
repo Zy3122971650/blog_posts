@@ -20,5 +20,5 @@ with open("{}-{}-{}-".format(localTime[0], localTime[1],
     stLocalTime = "{}-{}-{} {}:{}:{}".format(localTime[0], localTime[1],
                                              localTime[2], localTime[3], localTime[4], localTime[5])
     font = ['---', 'title: '+fileName,
-            'date: '+stLocalTime, 'tag: null', '---']
+            'date: '+stLocalTime, 'tags:\n - null', '---']
     f.write("\n".join(font))
