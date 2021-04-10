@@ -248,8 +248,7 @@ def move_links_posts():
     os.chdir(BASE_PATH)
 
 
-def main():
-    init()
+def not_speacial_post():
     markdown_path = get_all_md()
     post_datas = parse_info_in_each_markdown_post(
         markdown_path, abstract_words_number_for_each_item=50)
@@ -262,11 +261,22 @@ def main():
     # 生成没有yaml的文章（可以优化，我们一边解析一边生成文章 - - 就是代码可能会变得混乱）
     generate_normal_posts_for_dist(markdown_path)
     # 解析links
+
     links_path = get_all_friend_links()
     parase_friend_links(links_path)
 
     # 移动文章
     move_links_posts()
+
+
+def special_post():
+    # 获取所有的md
+    pass
+
+
+def main():
+    init()
+    not_speacial_post()
 
 
 main()
