@@ -348,7 +348,7 @@ def special_post():
     markdown_path = get_all_stories_md()
     story_datas = parse_info_in_each_markdown_post(markdown_path, normal=0)
 
-    parse_markdown_for_each_load(story_datas, 2)
+    parse_markdown_for_each_load(story_datas, 100)
     generate_special_posts_for_dist(markdown_path)
     pass
 
