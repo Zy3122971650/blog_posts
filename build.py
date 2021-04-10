@@ -49,6 +49,42 @@ def get_all_friend_links():
     return links
 
 
+def get_all_stories_md():
+    os.chdir('special')
+
+    files = os.listdir()
+    posts = []
+    for name in files:
+        if name.split('.')[-1] == 'md':
+            posts.append(os.path.abspath(name))
+    os.chdir(BASE_PATH)
+    return posts
+
+
+def parse_markdown_for_each_load(post_datas, each_load):
+    os.chdir('dist')
+    os.mkdir('story')
+    os.chdir('story')
+    os.mkdir('data')
+    os.chdir('data')
+    total = len(post_datas)
+    page_total = math.ceil(total/each_load)
+
+    with open('total_number.txt', 'w+') as f:
+        page_total = str(page_total)
+        f.write(page_total)
+
+    count = 1
+    post_datas_copy = post_datas.copy()  # 下面的操作不够优雅会操作数组，可以求模来循环改代码就留着下次吧，阿巴阿巴。
+    while (post_datas_copy):
+        with open('page_{}.json'.format(count), 'w') as f:
+            json.dump(post_datas_copy[:each_load], f, indent=4,)
+            post_datas_copy[:each_load] = []  # 清理被用过的元素
+        count += 1
+
+    os.chdir(BASE_PATH)
+
+
 def parse_markdown_for_home_page(post_datas, item_for_each_page):
     os.chdir('dist')
     os.mkdir('homePages')
@@ -73,8 +109,13 @@ def parse_markdown_for_home_page(post_datas, item_for_each_page):
     os.chdir(BASE_PATH)
 
 
-def parse_info_in_each_markdown_post(markdown_path_list, abstract_words_number_for_each_item):
+def parse_info_in_each_markdown_post(markdown_path_list, abstract_words_number_for_each_item=0, normal=1):
     post_datas = []
+
+    if normal == 1:
+        time_named = 'date'
+    else:
+        time_named = 'timestamp'
 
     for path in markdown_path_list:
         basename = os.path.basename(path)
@@ -87,26 +128,32 @@ def parse_info_in_each_markdown_post(markdown_path_list, abstract_words_number_f
             yaml_content = result.strip('-\n')
             yaml_content_python_obj = yaml.load(yaml_content)
 
-            # 通过yaml部分计算正文位置，读取正文，生成摘要
-            main_text_start = len(result.encode('utf-8'))
-            f.seek(main_text_start)
-            main_text = f.read()
-            words_for_main_text = len(main_text)
-            abstract = main_text[:abstract_words_number_for_each_item]
+            if normal == 1:
+                # 通过yaml部分计算正文位置，读取正文，生成摘要
+                main_text_start = len(result.encode('utf-8'))
+                f.seek(main_text_start)
+                main_text = f.read()
+                words_for_main_text = len(main_text)
+                abstract = main_text[:abstract_words_number_for_each_item]
 
-            if len(abstract) < words_for_main_text:
-                abstract += ' ......\n(点击查看更多)'
-            yaml_content_python_obj['abstract'] = abstract
+                if len(abstract) < words_for_main_text:
+                    abstract += ' ......\n(点击查看更多)'
+                yaml_content_python_obj['abstract'] = abstract
 
-            # 调整date的格式，记录到post_data数组
-            yaml_content_python_obj['date'] = yaml_content_python_obj['date'].strftime(
-                "%Y-%m-%d")
+            if normal == 1:
+                # 调整date的格式，记录到post_data数组
+                yaml_content_python_obj[time_named] = yaml_content_python_obj[time_named].strftime(
+                    "%Y-%m-%d")
+            else:
+                times = yaml_content_python_obj[time_named]
+                yaml_content_python_obj[time_named] = str(times)
+
             # 加入basename
             yaml_content_python_obj['basename'] = basename
             post_datas.append(yaml_content_python_obj)
     # 按时间给数组排序
     post_datas = sorted(
-        post_datas, key=lambda post: post['date'], reverse=True)
+        post_datas, key=lambda post: post[time_named], reverse=True)
     return post_datas
 
 
@@ -213,7 +260,29 @@ def parase_friend_links(links_path_list: list):
 
 def generate_normal_posts_for_dist(markdown_path_list):
     os.mkdir('./dist/posts')
-    os.chdir('dist/posts')
+    os.chdir('./dist/posts')
+
+    for path in markdown_path_list:
+        basename = os.path.basename(path)
+        with open(path, 'r') as f:
+            # 读取全文，利用正则表达式获取yaml部分
+            content = f.read()
+            content = content.strip('')
+            match = re.search(RE_RULER, content)
+            result = match.group(0)
+
+            # 通过yaml部分计算正文位置，读取正文
+            main_text_start = len(result.encode('utf-8'))
+            f.seek(main_text_start)
+            main_text = f.read()
+            with open(basename, 'w') as f1:
+                f1.write(main_text)
+    os.chdir(BASE_PATH)
+
+
+def generate_special_posts_for_dist(markdown_path_list):
+    os.mkdir('./dist/story/post')
+    os.chdir('./dist/story/post')
 
     for path in markdown_path_list:
         basename = os.path.basename(path)
@@ -254,8 +323,8 @@ def not_speacial_post():
         markdown_path, abstract_words_number_for_each_item=50)
 
     # 解析生成home和tags页面的数据
-    parse_markdown_for_home_page(
-        post_datas, item_for_each_page=6)
+    parse_markdown_for_home_page(post_datas, item_for_each_page=6)
+
     parse_markdown_for_tags_page(post_datas, item_for_each_page=6)
 
     # 生成没有yaml的文章（可以优化，我们一边解析一边生成文章 - - 就是代码可能会变得混乱）
@@ -271,12 +340,19 @@ def not_speacial_post():
 
 def special_post():
     # 获取所有的md
+    markdown_path = get_all_stories_md()
+    story_datas = parse_info_in_each_markdown_post(markdown_path, normal=0)
+
+    parse_markdown_for_each_load(story_datas, 2)
+    generate_special_posts_for_dist(markdown_path)
     pass
 
 
 def main():
     init()
     not_speacial_post()
+    os.chdir(BASE_PATH)
+    special_post()
 
 
 main()
