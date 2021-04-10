@@ -152,8 +152,13 @@ def parse_info_in_each_markdown_post(markdown_path_list, abstract_words_number_f
             yaml_content_python_obj['basename'] = basename
             post_datas.append(yaml_content_python_obj)
     # 按时间给数组排序
-    post_datas = sorted(
-        post_datas, key=lambda post: post[time_named], reverse=True)
+    if normal == 1:
+        post_datas = sorted(
+            post_datas, key=lambda post: post[time_named], reverse=True)
+    else:
+        post_datas = sorted(
+            post_datas, key=lambda post: post[time_named])
+
     return post_datas
 
 
