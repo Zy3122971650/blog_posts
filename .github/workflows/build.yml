@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
       - name: toServer
         run: |
-          sudo echo ${{secrets.SERVER_KEY}} > key.key
+          sudo echo '${{secrets.SERVER_KEY}}' > key.key
           sudo ssh -i ./key.key ubuntu@{{secrets.SERVER_IP}} "sudo rm -rf /www/blog"
           sudo scp -r dist -i ./key.key ubuntu@{{secrets.SERVER_IP}:/www/blog
 
