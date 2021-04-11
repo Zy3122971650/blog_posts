@@ -29,4 +29,3 @@ jobs:
           git commit -m "auto build"
           git remote add origin https://${{secrets.LOGIN_TOKEN}}@github.com/Zy3122971650/blog_posts.git
           git push -f origin master:page_server
-          
