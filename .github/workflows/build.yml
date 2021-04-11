@@ -18,13 +18,6 @@ jobs:
          pip install PyYAML
       - name: checkout
         uses: actions/checkout@v2
-      - name: toServer
-        run: |
-          sudo echo '${{secrets.SERVER_KEY}}' > key.key
-          sudo cat ./key.key
-          sudo ssh -i ./key.key ubuntu@${{secrets.SERVER_IP}} "sudo rm -rf /www/blog"
-          sudo scp -r dist -i ./key.key ubuntu@${{secrets.SERVER_IP}}:/www/blog
-
       - name: build
         run: |
           python build.py
@@ -36,3 +29,20 @@ jobs:
           git commit -m "auto build"
           git remote add origin https://${{secrets.LOGIN_TOKEN}}@github.com/Zy3122971650/blog_posts.git
           git push -f origin master:page_server
+          cd ../
+      - name: ls -a via ssh
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            sudo rm -rf /www/blog
+          host: ${{secrets.SERVER_IP}}
+          user: ubuntu
+          key: ${{ secrets.PRIVATE_KEY}}
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{secrets.SERVER_IP}}
+          username: ubuntu
+          port: 22
+          source: "dist"
+          target: "/www/blog"
