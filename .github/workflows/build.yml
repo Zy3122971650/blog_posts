@@ -33,6 +33,6 @@ jobs:
       - name: toServer
         run: |
           sudo echo ${{secrets.SERVER_KEY}} > key.key
-          sudo ssh -i key.key ubuntu@13.231.208.104 "sudo rm -rf /www/blog"
-          sudo scp -r dist -i key.key ubuntu@13.231.208.104:/www/blog
+          sudo ssh -i ./key.key ubuntu@13.231.208.104 "sudo rm -rf /www/blog"
+          sudo scp -r dist -i ./key.key ubuntu@13.231.208.104:/www/blog
           
