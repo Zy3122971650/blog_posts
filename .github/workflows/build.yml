@@ -23,7 +23,7 @@ jobs:
           KEY: ${{secrets.SERVER_KEY}}
         run: |
           python build.py
-          echo  "$KEY" > key.pem
+          echo -e "$KEY" > key.pem
           ls
           cat key.pem
           scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
