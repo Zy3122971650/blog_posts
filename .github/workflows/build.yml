@@ -21,11 +21,5 @@ jobs:
       - name: build
         run: |
           python build.py
-          cd dist
-          git config --global user.name "Zhang Yang"
-          git config --global user.email 3122971650@qq.com
-          git init
-          git add .
-          git commit -m "auto build"
-          git remote add origin https://${{secrets.LOGIN_TOKEN}}@github.com/Zy3122971650/blog_posts.git
-          git push -f origin master:page_server
+          echo -e "${{secrets.SERVER_KEY}}" > key.pem
+          scp -r dist -i key.pem ubuntu@${{secrets.SERVER_IP}}:~/blog
