@@ -24,4 +24,5 @@ jobs:
         run: |
           python build.py
           echo -e "$KEY" > key.pem
+          cat key.pem
           scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
