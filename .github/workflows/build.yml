@@ -20,9 +20,8 @@ jobs:
          pip3 install -r requirements.txt
       - name: build
         env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+          KEY: ${{secrets.SERVER_KEY}}
         run: |
           python build.py
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SERVER_KEY }}"
-          scp -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
+          echo -e "$KEY" > key.pem
+          scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
