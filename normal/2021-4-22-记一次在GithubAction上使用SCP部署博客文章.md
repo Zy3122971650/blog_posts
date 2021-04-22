@@ -1,6 +1,6 @@
 ---
 title: 记一次在Github Action上使用SCP部署博客文章
-date: 2021-4-22 18:3:59
+date: 2021-4-22 18:03:59
 tags:
  - SSH
  - Github Action
