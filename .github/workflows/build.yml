@@ -22,5 +22,5 @@ jobs:
         run: |
           python build.py
           echo -e "${{secrets.SERVER_KEY}}" > key.pem
-          echo -e "${{secrets.SERVER_SSH_RAS}}" >> ~/.ssh/known_hosts
+          echo -e "${{secrets.SERVER_SSH_RAS}}" > ~/.ssh/known_hosts
           scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
