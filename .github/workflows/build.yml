@@ -19,7 +19,6 @@ jobs:
          python3 -m pip install --upgrade pip
          pip3 install -r requirements.txt
       - name: build
-        env:
         run: |
           python build.py
           echo -e "${{secrets.SERVER_KEY}}" > key.pem
