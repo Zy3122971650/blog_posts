@@ -25,4 +25,4 @@ jobs:
           echo -e "${{secrets.SERVER_KEY}}" > key.pem
           echo -e "${{secrets.SERVER_SSH_RAS}}" > ~/.ssh/known_hosts
           sudo chmod 600 key.pem
-          sudo scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
+          scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
