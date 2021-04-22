@@ -21,5 +21,7 @@ jobs:
       - name: build
         run: |
           python build.py
+          mkidr -p /root/.ssh/
           echo -e "${{secrets.SERVER_KEY}}" > key.pem
+          echo -e "${{secrets.SERVER_SSH_RAS}}" > /root/.ssh/known_hosts
           sudo scp -i key.pem -r dist ubuntu@${{ secrets.SERVER_IP }}:~/blog
