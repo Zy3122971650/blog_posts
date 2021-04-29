@@ -1,0 +1,997 @@
+{
+    "code": 0,
+    "message": "请求成功",
+    "data": {
+        "recruitId": 55043,
+        "courseId": 1000008936,
+        "videoChapterDtos": [{
+                "id": 1000088034,
+                "name": "C语言概况",
+                "orderNumber": 1,
+                "description": "本章主要介绍程序设计的基本概念、结构化程序设计方法、C语言的起源与特点、初识C语言程序以及C语言程序的开发过程。通过本章的学习，可对C语言程序设计的基本概念和过程有一个大致的了解，并通过模仿编写求解简单问题的C语言程序。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216488,
+                        "name": "程序设计的基本概念",
+                        "orderNumber": 1,
+                        "introduction": "本小节主要介绍程序设计的基本概念、程序设计的一般过程、结构化程序设计方法。",
+                        "chapterId": 1000088034,
+                        "videoId": 1666795,
+                        "videoSec": 1131,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216495,
+                        "name": "初识C语言程序",
+                        "orderNumber": 2,
+                        "introduction": "本节主要介绍C语言的起源与特点、C语言字符集与标识符、C语言程序的基本构成，简单屏幕输出以及C语言程序的开发过程。",
+                        "chapterId": 1000088034,
+                        "videoId": 1667671,
+                        "videoSec": 1122,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216502,
+                        "name": "VC++6.0上机调试过程演示",
+                        "orderNumber": 3,
+                        "introduction": "本节介绍并演示VC6.0的上机调试过程。",
+                        "chapterId": 1000088034,
+                        "videoId": 1679839,
+                        "videoSec": 263,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216508,
+                        "name": "DEV C++安装与调试演示",
+                        "orderNumber": 4,
+                        "introduction": "本节介绍DEV C++的安装与调试过程。",
+                        "chapterId": 1000088034,
+                        "videoId": 1679853,
+                        "videoSec": 270,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465692,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056039,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/wE8jXgod/yQjr8K7w/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088035,
+                "name": "C语言基础",
+                "orderNumber": 2,
+                "description": "本章内容是学习C语言的基础，包括数据类型、常量、变量、算术运算、标准函数等，概念较多，希望大家重视并能理解掌握。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216489,
+                        "name": "数据类型",
+                        "orderNumber": 1,
+                        "introduction": "小节主要介绍C语言数据类型的种类，重点介绍基本数据类型的标识符。",
+                        "chapterId": 1000088035,
+                        "videoId": 1668087,
+                        "videoSec": 458,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216496,
+                        "name": "常量",
+                        "orderNumber": 2,
+                        "introduction": "本节介绍什么是常量、符号常量如何定义、三种基本常量的表示方法、字符串常量的概念。",
+                        "chapterId": 1000088035,
+                        "videoId": 1668401,
+                        "videoSec": 912,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216503,
+                        "name": "变量",
+                        "orderNumber": 3,
+                        "introduction": "本节介绍变量的定义和初始化、字符型数据在内存中的存储形式。",
+                        "chapterId": 1000088035,
+                        "videoId": 1669505,
+                        "videoSec": 588,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216509,
+                        "name": "算术运算",
+                        "orderNumber": 4,
+                        "introduction": "本节介绍C语言运算符、表达式求值，重点算术表达式的书写规则、运算规则、基本数据间的混合运算。",
+                        "chapterId": 1000088035,
+                        "videoId": 1670695,
+                        "videoSec": 1102,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216514,
+                        "name": "标准函数及3个特殊的运算符",
+                        "orderNumber": 5,
+                        "introduction": "本节介绍标准函数、逗号运算符、求字节长度运算符、取地址运算符的使用。",
+                        "chapterId": 1000088035,
+                        "videoId": 1672231,
+                        "videoSec": 752,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465704,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056042,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/wE8jXgo2/yRv9zMny/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088036,
+                "name": "顺序结构",
+                "orderNumber": 3,
+                "description": "顺序结构是最简单的C语言程序结构，它不需要专门的语句来控制流程。本章所介绍的语句，将按它们在程序中出现的先后顺序逐条执行，在执行这些语句的过程中不会发生程序流程的转移，由这样的语句构成的程序结构就是顺序结构。<br/>（1）了解C语言中语句的分类；<br/>（2）掌握赋值语句、复合语句和空语句的应用；<br/>（3）掌握数据输出和数据输入的常用方法，掌握格式输入函数scanf() 和格式输出函数printf() 的使用；<br/>（4）掌握字符型数据的输入函数getchar()和输出函数putchar()的使用；<br/>（5）掌握基本格式控制符的功能和使用。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216490,
+                        "name": "C语言程序的语句",
+                        "orderNumber": 1,
+                        "introduction": "本节介绍C语言的说明语句和执行语句的种类。",
+                        "chapterId": 1000088036,
+                        "videoId": 1680019,
+                        "videoSec": 385,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216497,
+                        "name": "赋值运算",
+                        "orderNumber": 2,
+                        "introduction": "本节介绍：<br/>（1）赋值运算符的种类、优先级、结合性和表达式的求值方法；<br/>（2）自增、自减运算符的使用、",
+                        "chapterId": 1000088036,
+                        "videoId": 1680049,
+                        "videoSec": 838,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216504,
+                        "name": "数据的输入和输出",
+                        "orderNumber": 3,
+                        "introduction": "本节介绍：<br/>（1）单个字符型数据的输入函数getchar()和输出函数putchar()的使用；<br/>（2）格式化输出函数printf() 的使用；<br/>（3）格式化输入函数scanf() 的使用。",
+                        "chapterId": 1000088036,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168000,
+                                "name": "单个字符的输入和输出函数",
+                                "orderNumber": 1,
+                                "lessonId": 1000216504,
+                                "videoId": 1680067,
+                                "videoSec": 330,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168012,
+                                "name": "格式化输出函数printf格式功能",
+                                "orderNumber": 2,
+                                "lessonId": 1000216504,
+                                "videoId": 1680457,
+                                "videoSec": 1000,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168024,
+                                "name": "格式化输出函数printf应用举例",
+                                "orderNumber": 3,
+                                "lessonId": 1000216504,
+                                "videoId": 1680487,
+                                "videoSec": 235,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168027,
+                                "name": "格式化输入函数scanf格式功能",
+                                "orderNumber": 4,
+                                "lessonId": 1000216504,
+                                "videoId": 1680523,
+                                "videoSec": 896,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168030,
+                                "name": "格式化输入函数scanf应用举例",
+                                "orderNumber": 5,
+                                "lessonId": 1000216504,
+                                "videoId": 1680535,
+                                "videoSec": 339,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216510,
+                        "name": "习题讲解",
+                        "orderNumber": 4,
+                        "introduction": "本部分选取了13道选择题，对所学基本知识加以巩固。",
+                        "chapterId": 1000088036,
+                        "videoId": 1686731,
+                        "videoSec": 620,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465694,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056035,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/w3jmX1A0/wb9YnGJy/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088037,
+                "name": "选择结构",
+                "orderNumber": 4,
+                "description": "选择结构是结构化程序设计的3种基本结构之一。其作用是根据所给定的条件是否满足，决定程序的不同流程。本章主要介绍如何利用C语言实现选择结构程序设计。<br/>（1）掌握关系运算符、逻辑运算符的功能和作用及其表达式的求值过程；<br/>（2）掌握 if语句和 switch语句的使用；<br/>（3）掌握选择结构的基本程序设计方法；<br/>（4）掌握条件运算符的功能和使用；<br/>（5）掌握选择嵌套结构的执行过程。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216491,
+                        "name": "关系运算",
+                        "orderNumber": 1,
+                        "introduction": "本节介绍：<br/>（1）关系运算符的种类、优先级；<br/>（2）关系表达式的求值过程。",
+                        "chapterId": 1000088037,
+                        "videoId": 1680603,
+                        "videoSec": 791,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216498,
+                        "name": "逻辑运算",
+                        "orderNumber": 2,
+                        "introduction": "本节介绍逻辑运算符的优先级、逻辑表达式。",
+                        "chapterId": 1000088037,
+                        "videoId": 1680727,
+                        "videoSec": 920,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216505,
+                        "name": "if语句",
+                        "orderNumber": 3,
+                        "introduction": "本节介绍利用if语句实现选择结构。<br/>（1）if语句的3种形式的格式、执行过程；<br/>（2）if语句的嵌套；<br/>（3）条件运算符和条件表达式。",
+                        "chapterId": 1000088037,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168001,
+                                "name": "if语句的单路分支形式",
+                                "orderNumber": 1,
+                                "lessonId": 1000216505,
+                                "videoId": 1681971,
+                                "videoSec": 410,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168013,
+                                "name": "if语句的双路分支形式",
+                                "orderNumber": 2,
+                                "lessonId": 1000216505,
+                                "videoId": 1681995,
+                                "videoSec": 562,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168025,
+                                "name": "if语句的多分支形式",
+                                "orderNumber": 3,
+                                "lessonId": 1000216505,
+                                "videoId": 1682033,
+                                "videoSec": 415,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168028,
+                                "name": "if语句的嵌套",
+                                "orderNumber": 4,
+                                "lessonId": 1000216505,
+                                "videoId": 1682097,
+                                "videoSec": 774,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216511,
+                        "name": "switch语句",
+                        "orderNumber": 4,
+                        "introduction": "本节介绍利用switch语句处理多分支选择，switch 语句的格式、执行过程，编程技巧。。",
+                        "chapterId": 1000088037,
+                        "videoId": 1682233,
+                        "videoSec": 724,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465693,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056033,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/5jKjEZm8/y7W2l9jy/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088038,
+                "name": "循环结构",
+                "orderNumber": 5,
+                "description": "循环结构是结构化程序设计的3种基本结构之一，其特点是，在给定条件成立时，反复执行某程序段，直到条件不成立为止。给定的条件称为循环条件，反复执行的程序段称为循环体。循环的基本要素有3个：循环入口（即循环的初始化条件）、循环出口（即循环的终止条件）和循环体（反复执行的部分）。在设计循环结构时，应当准确地定义循环的三要素，严格控制循环执行的次数，使得循环在有限次内完成。如果一个循环执行过程无法结束，就会出现无限循环的情形，称为死循环。程序中应避免死循环的出现。C语言提供了3种循环语句实现循环结构，即while语句、do-while语句和for语句。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216492,
+                        "name": "while语句",
+                        "orderNumber": 1,
+                        "introduction": "本节介绍：<br/>（1） while语句的格式和执行过程；<br/>（2）累加、累乘算法",
+                        "chapterId": 1000088038,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168002,
+                                "name": "while语句格式功能",
+                                "orderNumber": 1,
+                                "lessonId": 1000216492,
+                                "videoId": 1682715,
+                                "videoSec": 899,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168014,
+                                "name": "while语句应用举例",
+                                "orderNumber": 2,
+                                "lessonId": 1000216492,
+                                "videoId": 1682761,
+                                "videoSec": 377,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216499,
+                        "name": "do-while语句",
+                        "orderNumber": 2,
+                        "introduction": "本节介绍：<br/>（1）do- while语句的格式和执行过程；<br/>（2）while和do-while语句的区别。<br/>",
+                        "chapterId": 1000088038,
+                        "videoId": 1869819,
+                        "videoSec": 1161,
+                        "isDeteled": 0,
+                        "ishaveChildrenLesson": 0,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216506,
+                        "name": "for语句",
+                        "orderNumber": 3,
+                        "introduction": "本节介绍<br/>（1）for语句的一般形式和执行过程，注意问题；<br/>（2）循环嵌套的定义、执行过程、应用特点。",
+                        "chapterId": 1000088038,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168003,
+                                "name": "for语句格式功能",
+                                "orderNumber": 1,
+                                "lessonId": 1000216506,
+                                "videoId": 1680909,
+                                "videoSec": 773,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168015,
+                                "name": "循环的嵌套",
+                                "orderNumber": 2,
+                                "lessonId": 1000216506,
+                                "videoId": 1680967,
+                                "videoSec": 481,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216512,
+                        "name": "转移语句",
+                        "orderNumber": 4,
+                        "introduction": "本节介绍：<br/>（1）循环体中continue 语句和break语句的作用。<br/>（2）简单几何图形编程技巧。",
+                        "chapterId": 1000088038,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168004,
+                                "name": "转移语句格式",
+                                "orderNumber": 1,
+                                "lessonId": 1000216512,
+                                "videoId": 1680991,
+                                "videoSec": 815,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168016,
+                                "name": "简单几何图形编程",
+                                "orderNumber": 2,
+                                "lessonId": 1000216512,
+                                "videoId": 1681021,
+                                "videoSec": 531,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216515,
+                        "name": "循环结构应用举例",
+                        "orderNumber": 5,
+                        "introduction": "本节介绍：<br/>（1）掌握枚举算法的编程方法；<br/>（2）通过编写打印三角形九九乘法表，掌握输出具有图形特征的信息时如何控制光标的位置及双重循环的编程特点。",
+                        "chapterId": 1000088038,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168005,
+                                "name": "枚举算法",
+                                "orderNumber": 1,
+                                "lessonId": 1000216515,
+                                "videoId": 1682913,
+                                "videoSec": 953,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168017,
+                                "name": "九九乘法表",
+                                "orderNumber": 2,
+                                "lessonId": 1000216515,
+                                "videoId": 1681051,
+                                "videoSec": 505,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465698,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056040,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/wK9L4apb/y04aVrWy/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088039,
+                "name": "数组",
+                "orderNumber": 6,
+                "description": "本章将详细介绍C语言中如何定义和使用数组及常用算法，主要内容有：一维数组的定义和使用，二维数组的定义和使用，字符数组的定义和应用、选择排序、冒泡排序、极值问题等。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216493,
+                        "name": "一维数组",
+                        "orderNumber": 1,
+                        "introduction": "本节主要介绍：<br/>（1）一维数组定义、初始化；<br/>（2）一维数组元素的引用；<br/>（3）一维数组通常与单循环配合，实现现对数组元素的逐个处理；<br/>（4）选择法排序。<br/>",
+                        "chapterId": 1000088039,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168006,
+                                "name": "一维数组的定义、初始化及引用",
+                                "orderNumber": 1,
+                                "lessonId": 1000216493,
+                                "videoId": 1681125,
+                                "videoSec": 748,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168018,
+                                "name": "一维数组的应用",
+                                "orderNumber": 2,
+                                "lessonId": 1000216493,
+                                "videoId": 1681159,
+                                "videoSec": 492,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216500,
+                        "name": "二维数组",
+                        "orderNumber": 2,
+                        "introduction": "本节主要介绍：<br/>（1）二维数组定义、初始化；<br/>（2）二维数组元素的引用；<br/>（3）二维数组的应用：与双循环配合，实现现对数组元素的逐个处理。<br/><br/>",
+                        "chapterId": 1000088039,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168007,
+                                "name": "二维数组定义、初始化及引用",
+                                "orderNumber": 1,
+                                "lessonId": 1000216500,
+                                "videoId": 1682981,
+                                "videoSec": 605,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168019,
+                                "name": "二维数组的应用",
+                                "orderNumber": 2,
+                                "lessonId": 1000216500,
+                                "videoId": 1681365,
+                                "videoSec": 773,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216507,
+                        "name": "字符数组",
+                        "orderNumber": 3,
+                        "introduction": "本节主要介绍：<br/>（1）字符数组定义、初始化；<br/>（2）字符数组的输入、输出；<br/>（3）字符串处理函数；<br/>（4）字符数组的应用。<br/>",
+                        "chapterId": 1000088039,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168008,
+                                "name": "字符数组的定义和初始化",
+                                "orderNumber": 1,
+                                "lessonId": 1000216507,
+                                "videoId": 1683009,
+                                "videoSec": 370,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168020,
+                                "name": "字符数组的输入和输出",
+                                "orderNumber": 2,
+                                "lessonId": 1000216507,
+                                "videoId": 1681333,
+                                "videoSec": 301,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168026,
+                                "name": "字符串处理函数",
+                                "orderNumber": 3,
+                                "lessonId": 1000216507,
+                                "videoId": 1681325,
+                                "videoSec": 557,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168029,
+                                "name": "字符数组的应用",
+                                "orderNumber": 4,
+                                "lessonId": 1000216507,
+                                "videoId": 1681305,
+                                "videoSec": 279,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216513,
+                        "name": "数组习题",
+                        "orderNumber": 4,
+                        "introduction": "本节通过习题巩固数组的基本概念和引用方法，并讲解冒泡排序。",
+                        "chapterId": 1000088039,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168009,
+                                "name": "数组基础题",
+                                "orderNumber": 1,
+                                "lessonId": 1000216513,
+                                "videoId": 1683055,
+                                "videoSec": 998,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168021,
+                                "name": "冒泡排序",
+                                "orderNumber": 2,
+                                "lessonId": 1000216513,
+                                "videoId": 1681271,
+                                "videoSec": 319,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465700,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056026,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/erBnLrmO/edXBO7Qe/1000008936/543/0"
+                }
+            },
+            {
+                "id": 1000088040,
+                "name": "函数",
+                "orderNumber": 7,
+                "description": "本章主要介绍：<br/>（1）自定义函数的定义、返回值、调用、声明；<br/>（2）局部变量及其存储类别；<br/>（3）全局变量及其存储类别。",
+                "learningDay": 0,
+                "learningLessonStatus": 1,
+                "isPassBadge": 0,
+                "limitChecked": 0,
+                "videoLessons": [{
+                        "id": 1000216494,
+                        "name": "用户自定义函数",
+                        "orderNumber": 1,
+                        "introduction": "本节主要介绍自定义函数的定义、返回值、调用、声明。<br/>",
+                        "chapterId": 1000088040,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168010,
+                                "name": "用户自定义函数的定义、返回值",
+                                "orderNumber": 1,
+                                "lessonId": 1000216494,
+                                "videoId": 1683109,
+                                "videoSec": 454,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168022,
+                                "name": "用户自定义函数的调用和声明",
+                                "orderNumber": 2,
+                                "lessonId": 1000216494,
+                                "videoId": 1681257,
+                                "videoSec": 871,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    },
+                    {
+                        "id": 1000216501,
+                        "name": "变量的存储类别",
+                        "orderNumber": 2,
+                        "introduction": "本节主要介绍：<br/>（1）局部变量的定义及其存储类别；<br/>（2）全局变量的定义及其存储类别。",
+                        "chapterId": 1000088040,
+                        "isDeteled": 0,
+                        "videoSmallLessons": [{
+                                "id": 1000168011,
+                                "name": "局部变量及其存储类别",
+                                "orderNumber": 1,
+                                "lessonId": 1000216501,
+                                "videoId": 1683147,
+                                "videoSec": 894,
+                                "isStudiedLesson": 0
+                            },
+                            {
+                                "id": 1000168023,
+                                "name": "全局变量及其存储类别",
+                                "orderNumber": 2,
+                                "lessonId": 1000216501,
+                                "videoId": 1681189,
+                                "videoSec": 732,
+                                "isStudiedLesson": 0
+                            }
+                        ],
+                        "ishaveChildrenLesson": 1,
+                        "isStudiedLesson": 0
+                    }
+                ],
+                "isPass": 1,
+                "studentExamDto": {
+                    "id": 1163465696,
+                    "correctProgress": null,
+                    "createTime": null,
+                    "updateTime": null,
+                    "courseId": null,
+                    "classId": null,
+                    "userId": null,
+                    "isDelete": 0,
+                    "oneHundredPont": null,
+                    "gradePont": null,
+                    "levelPont": null,
+                    "passPont": null,
+                    "isUpdate": null,
+                    "remainingTime": null,
+                    "state": 1,
+                    "achieveCount": null,
+                    "achieve": null,
+                    "courseSourceType": null,
+                    "exam": {
+                        "id": 16056046,
+                        "isRecruit": 2,
+                        "limitTime": null,
+                        "parentId": null,
+                        "type": 1,
+                        "startDate": 1618502400000,
+                        "examPaper": {
+                            "type": null
+                        },
+                        "reviewEndTime": null,
+                        "lateSetting": null,
+                        "lateScore": null,
+                        "totalScore": null
+                    },
+                    "remark": null,
+                    "publishDate": null,
+                    "endDate": null,
+                    "score": null,
+                    "examId": null,
+                    "examStartFlag": null,
+                    "parentId": null,
+                    "examUrl": "//onlineexamh5new.zhihuishu.com/stuExamWeb.html#/webExamList/dohomework/55043/5kK3jQmq/yNa8ALd5/1000008936/543/0"
+                }
+            }
+        ]
+    }
+}
