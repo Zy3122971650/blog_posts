@@ -31,6 +31,8 @@ def get_all_md():
 
     posts = os.listdir()
     for index, name in enumerate(posts):
+        if os.path.isdir(name):
+            continue
         posts[index] = os.path.abspath(name)
 
     os.chdir(BASE_PATH)
