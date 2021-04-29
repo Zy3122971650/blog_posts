@@ -30,13 +30,14 @@ def get_all_md():
     os.chdir('normal')
 
     posts = os.listdir()
-    for index, name in enumerate(posts):
+    post_path = []
+    for name in posts:
         if os.path.isdir(os.path.abspath(name)):
-            posts.pop(index)
-        posts[index] = os.path.abspath(name)
+            continue
+        post_path.append(os.path.abspath(name))
 
     os.chdir(BASE_PATH)
-    return posts
+    return post_path
 
 
 def get_all_friend_links():
