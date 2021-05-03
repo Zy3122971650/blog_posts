@@ -345,6 +345,7 @@ def not_speacial_post():
 
     # 移动文章
     move_links_posts()
+    os.chdir(BASE_PATH)
 
 
 def special_post():
@@ -354,14 +355,29 @@ def special_post():
 
     parse_markdown_for_each_load(story_datas, 100)
     generate_special_posts_for_dist(markdown_path)
-    pass
+    os.chdir(BASE_PATH)
+
+
+def site_map():
+    os.chdir('dist')
+    with open('sitmap.xml', 'w') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+        os.chdir('posts')
+        file_names = os.listdir()
+        for file_name in file_names:
+            # name = file_name.split('.')[0]
+            f.writelines(
+                ['<url>', '<loc>', 'https://wdbefore.com/#/{}'.format(file_name), '</loc>', '</url>'])
+        f.write('</urlset>')
+    os.chdir(BASE_PATH)
 
 
 def main():
     init()
     not_speacial_post()
-    os.chdir(BASE_PATH)
     special_post()
+    site_map()
 
 
 main()
